@@ -50,10 +50,16 @@ Basic syntax:
 
 ### Examples
 
-1. Basic scan:
+1. Default scan (without parameters):
 ```bash
 ./RustMap.sh 10.10.10.10
 ```
+The default scan includes:
+- RustScan's fast port discovery: `rustscan -a <target> --ulimit 5000 --greppable`
+- Service detection: `nmap -p <ports> -sV --version-intensity 9`
+- Full port enumeration: `nmap -p <ports> -A -Pn -sC -T4`
+
+These commands are executed automatically in sequence, with RustScan first identifying open ports, followed by Nmap performing detailed service detection and enumeration on those ports.
 
 2. Scan with vulnerability and safe scripts:
 ```bash
