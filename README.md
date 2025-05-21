@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![RustMap Banner](https://raw.githubusercontent.com/Wael-Rd/RustMap/main/banner.png)
+![RustMap Banner]([https://raw.githubusercontent.com/Wael-Rd/RustMap/main/banner.png](https://github.com/Wael-Rd/RustMap/blob/main/rustmapV0.png))
 
 A lightning-fast port scanning and enumeration tool that combines RustScan's blazing speed (up to 8000 ports/second) with Nmap's comprehensive scanning capabilities. RustMap significantly reduces scanning time from hours to minutes while maintaining thorough security assessment capabilities.
 
